@@ -1,0 +1,29 @@
+{{>navbar}}
+<div class="all-profile">
+  <div class="profile-container">
+    <h2 class="profile-title">Perfil</h2>
+      <div class="profile-info">
+        <label for="first_name">Nombre:</label>
+        <p>{{user.first_name}}</p>
+      </div>
+      <div class="profile-info">
+        <label for="last_name">Apellido:</label>
+        <p>{{user.last_name}}</p>
+      </div>
+      <div class="profile-info">
+        <label for="email">Email:</label>
+        <p>{{user.email}}</p>
+      </div>
+      <div class="profile-info">
+        <label for="age">Edad:</label>
+        <p>{{user.age}}</p>
+      </div>
+    <div class="profile-action">
+      <a
+        href="/api/sessions/logout"
+        class="btn btn-danger logout-btn"
+      >Logout</a>
+    </div>
+  </div>
+</div>
+<script src="/js/cart.js"></script>
